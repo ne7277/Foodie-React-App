@@ -13,9 +13,7 @@ const RestaurantMenu = () => {
 
   const fetchMenu = async () => {
   try {
-    const response = await fetch(
-      `https://proxy.corsfix.com/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&restaurantId=${resId}&lat=19.0760&lng=72.8777`
-    );
+    const response = await fetch(MENU_API + resId);
 
     const json = await response.json();
     setMenuData(json?.data);

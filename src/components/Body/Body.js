@@ -1,6 +1,7 @@
 import RestroCard from "./RestroCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
+import { RESTRO_API } from "../../utils/constants";
 
 const Body = () => {
   const [restaurantData, setRestaurantData] = useState([]);
@@ -13,9 +14,7 @@ const Body = () => {
 
   const fetchRestaurants = async () => {
     try {
-      const response = await fetch(
-        "https://proxy.corsfix.com/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.0760&lng=72.8777&page_type=DESKTOP_WEB_LISTING"
-      );
+      const response = await fetch(RESTRO_API);
 
       const json = await response.json();
 
