@@ -1,7 +1,7 @@
 import RestroCard from "./RestroCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
-import { RESTRO_API } from "../../utils/constants";
+import restaurantsData from "../../data/RestaurantsData.json";
 
 const Body = () => {
   const [restaurantData, setRestaurantData] = useState([]);
@@ -10,25 +10,25 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {fetchRestaurants();}, []);
+  useEffect(() => {
+    loadRestaurants();
+  }, []);
 
-  const fetchRestaurants = async () => {
+  const loadRestaurants = () => {
     try {
-      const response = await fetch(RESTRO_API);
+      const cards = restaurantsData?.data?.cards || [];
 
-      const json = await response.json();
+      const restaurantList =
+        cards?.[1]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants || [];
 
-      const restaurants =
-        json?.data?.cards?.find(
-          (card) =>
-            card?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      console.log("Restaurants loaded:", restaurantList.length);
 
-      setRestaurantData(restaurants);
-      setFilteredData(restaurants);
-      setLoading(false);
+      setRestaurantData(restaurantList);
+      setFilteredData(restaurantList);
     } catch (error) {
-      console.log("Swiggy API blocked or failed");
+      console.error("Error loading restaurants", error);
+    } finally {
       setLoading(false);
     }
   };
@@ -36,7 +36,7 @@ const Body = () => {
   const handleTopRatedButton = () => {
     if (!isTopRated) {
       const topRated = restaurantData.filter(
-        (res) => res?.info?.avgRating > 4.5
+        (res) => res?.info?.avgRating >= 4.5
       );
       setFilteredData(topRated);
     } else {
@@ -54,9 +54,7 @@ const Body = () => {
     setFilteredData(filtered);
   };
 
-  if (loading) {
-    return <h2><Shimmer/></h2>;
-  }
+  if (loading) return <Shimmer />;
 
   return (
     <div className="body">
