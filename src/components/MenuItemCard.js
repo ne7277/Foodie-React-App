@@ -1,6 +1,8 @@
 const MenuItemCard = ({ item }) => {
   const { name, price } = item;
 
+  
+
   return (
     <div className="menu-item-card">
       <div>

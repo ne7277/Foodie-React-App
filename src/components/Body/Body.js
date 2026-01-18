@@ -1,6 +1,6 @@
 import RestroCard from "./RestroCard";
 import { useEffect, useState } from "react";
-import Shimmer from "./Shimmer";
+import {Shimmer} from "./Shimmer";
 import restaurantsData from "../../data/RestaurantsData.json";
 
 const Body = () => {

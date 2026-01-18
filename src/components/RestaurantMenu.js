@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import Shimmer from "./Shimmer";
+import { MenuShimmer} from "./Body/Shimmer";
 import MenuItemCard from "./MenuItemCard";
 import menuData from "../data/RestaurantMenuData.json";
 
@@ -33,20 +33,17 @@ const RestaurantMenu = () => {
     }
   };
 
-  // if (loading) return <Shimmer />;
+  if (loading) return <MenuShimmer />;
   if (!menuInfo) return <h3>Menu not available</h3>;
 
   return (
     <div className="menu-page">
-      {/* Restaurant Info */}
       <div className="menu-header">
         <h2>{menuInfo.name}</h2>
         <p>{menuInfo.cuisines.join(", ")}</p>
         <p>⭐ {menuInfo.avgRating}</p>
         <p>{menuInfo.areaName}</p>
       </div>
-
-      {/* Menu */}
       <div className="menu-container">
         {categories.map((category) => (
           <div key={category.title} className="menu-category">
