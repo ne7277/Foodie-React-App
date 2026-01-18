@@ -1,0 +1,182 @@
+{
+  "9862": {
+    "name": "Pizza Hut",
+    "about": {
+      "description": "Pizza Hut is a globally loved pizza brand known for its wide range of delicious pizzas, cheesy crusts, and classic sides. From traditional favorites to innovative flavors, it delivers comfort food perfect for every occasion.",
+      "since": "1958",
+      "timings": "11:00 AM - 11:00 PM",
+      "contact": "+91 1800 202 2022"
+    }
+  },
+  "828898": {
+    "name": "Olio - The Wood Fired Pizzeria",
+    "about": {
+      "description": "Olio brings the authentic taste of Italian wood-fired pizzas, crafted with fresh ingredients and baked to perfection. Known for its artisanal approach, it offers a premium pizza experience.",
+      "since": "2019",
+      "timings": "12:00 PM - 11:30 PM",
+      "contact": "+91 98765 12098"
+    }
+  },
+  "387322": {
+    "name": "La Pino'z Pizza",
+    "about": {
+      "description": "La Pino'z Pizza is famous for its generously topped pizzas and fusion flavors. Combining affordability with great taste, it offers a wide variety of vegetarian pizzas.",
+      "since": "2011",
+      "timings": "11:00 AM - 12:00 AM",
+      "contact": "+91 1800 120 9999"
+    }
+  },
+  "32399": {
+    "name": "McDonald's",
+    "about": {
+      "description": "McDonald's is a global fast-food icon offering burgers, fries, desserts, and beverages loved worldwide. Known for consistent taste and quick service.",
+      "since": "1940",
+      "timings": "9:00 AM - 12:00 AM",
+      "contact": "+91 1800 3000 2020"
+    }
+  },
+  "809883": {
+    "name": "Cheesecake & Co.",
+    "about": {
+      "description": "Cheesecake & Co. specializes in premium cheesecakes and desserts crafted with rich ingredients. A paradise for dessert lovers.",
+      "since": "2017",
+      "timings": "10:30 AM - 11:00 PM",
+      "contact": "+91 98234 56780"
+    }
+  },
+  "681665": {
+    "name": "LeanCrust Pizza",
+    "about": {
+      "description": "LeanCrust Pizza focuses on healthier thin-crust pizzas without compromising on taste. Perfect for guilt-free indulgence.",
+      "since": "2020",
+      "timings": "11:00 AM - 11:30 PM",
+      "contact": "+91 98760 54321"
+    }
+  },
+  "692689": {
+    "name": "WeFit",
+    "about": {
+      "description": "WeFit is a health-focused brand offering nutritious meals, protein bowls, and balanced dishes for fitness-conscious customers.",
+      "since": "2020",
+      "timings": "8:00 AM - 10:00 PM",
+      "contact": "+91 90000 11122"
+    }
+  },
+  "699105": {
+    "name": "Harvest Salad Co",
+    "about": {
+      "description": "Harvest Salad Co serves fresh, vibrant salads and power bowls made from high-quality ingredients for healthy living.",
+      "since": "2018",
+      "timings": "9:00 AM - 10:00 PM",
+      "contact": "+91 98123 45678"
+    }
+  },
+  "698272": {
+    "name": "Maiz Mexican Kitchen",
+    "about": {
+      "description": "Maiz Mexican Kitchen brings bold Mexican flavors with hearty bowls, tacos, and wraps inspired by authentic recipes.",
+      "since": "2019",
+      "timings": "12:00 PM - 11:00 PM",
+      "contact": "+91 98789 65432"
+    }
+  },
+  "24463": {
+    "name": "Domino's Pizza",
+    "about": {
+      "description": "Domino's Pizza is known for its wide range of pizzas, quick delivery, and crowd-favorite flavors across the globe.",
+      "since": "1960",
+      "timings": "10:00 AM - 12:00 AM",
+      "contact": "+91 1860 210 0000"
+    }
+  },
+  "243517": {
+    "name": "KFC",
+    "about": {
+      "description": "KFC is a globally recognized fast-food chain offering crispy and flavorful meals known for its signature seasoning.",
+      "since": "1952",
+      "timings": "11:00 AM - 11:00 PM",
+      "contact": "+91 1800 202 0222"
+    }
+  },
+  "78036": {
+    "name": "Burger King",
+    "about": {
+      "description": "Burger King is famous for flame-grilled burgers and bold flavors with a wide selection of meals and sides.",
+      "since": "1954",
+      "timings": "11:00 AM - 12:00 AM",
+      "contact": "+91 1800 209 9999"
+    }
+  },
+  "31775": {
+    "name": "Subway",
+    "about": {
+      "description": "Subway offers freshly prepared subs, salads, and wraps made to order with customizable options.",
+      "since": "1965",
+      "timings": "9:00 AM - 11:00 PM",
+      "contact": "+91 1800 123 2222"
+    }
+  },
+  "376244": {
+    "name": "Good Flippin' Burgers",
+    "about": {
+      "description": "Good Flippin' Burgers is known for gourmet-style burgers made with premium ingredients and creative flavors.",
+      "since": "2019",
+      "timings": "12:00 PM - 11:30 PM",
+      "contact": "+91 98989 12121"
+    }
+  },
+  "328878": {
+    "name": "Charcoal Eats",
+    "about": {
+      "description": "Charcoal Eats specializes in aromatic biryanis and rice bowls cooked with rich spices and consistent flavors.",
+      "since": "2015",
+      "timings": "11:30 AM - 11:30 PM",
+      "contact": "+91 90090 90090"
+    }
+  },
+  "391816": {
+    "name": "Louis Burger",
+    "about": {
+      "description": "Louis Burger offers gourmet vegetarian burgers with rich sauces and indulgent premium fillings.",
+      "since": "2021",
+      "timings": "12:00 PM - 11:00 PM",
+      "contact": "+91 97979 56565"
+    }
+  },
+  "82668": {
+    "name": "The Belgian Waffle Co.",
+    "about": {
+      "description": "The Belgian Waffle Co. is known for freshly made waffles topped with delicious spreads, fruits, and sauces.",
+      "since": "2015",
+      "timings": "10:00 AM - 11:00 PM",
+      "contact": "+91 1800 123 7777"
+    }
+  },
+  "750450": {
+    "name": "Daily Kitchen",
+    "about": {
+      "description": "Daily Kitchen serves homestyle meals and wholesome thalis prepared with balanced flavors for everyday dining.",
+      "since": "2017",
+      "timings": "10:00 AM - 10:30 PM",
+      "contact": "+91 98980 80808"
+    }
+  },
+  "639509": {
+    "name": "Dum Safar Biryani",
+    "about": {
+      "description": "Dum Safar Biryani offers slow-cooked biryanis sealed with authentic dum techniques and rich aromas.",
+      "since": "2016",
+      "timings": "11:30 AM - 11:30 PM",
+      "contact": "+91 1800 102 5090"
+    }
+  },
+  "5172": {
+    "name": "Theobroma",
+    "about": {
+      "description": "Theobroma is a beloved bakery brand known for brownies, cakes, and premium desserts made with quality ingredients.",
+      "since": "2004",
+      "timings": "9:00 AM - 11:00 PM",
+      "contact": "+91 1800 266 3444"
+    }
+  }
+}

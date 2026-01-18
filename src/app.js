@@ -15,6 +15,7 @@ import AboutUs from "./components/footer/Aboutus/aboutus";
 import ContactUs from "./components/Body/ContactUs";
 import Error404 from "./components/Body/Error";
 import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
+import RestaurantAbout from "./components/RestaurantMenu/RestaurantAbout";
 
 const AppLayout = () => {
   const navigate = useNavigate();
@@ -22,7 +23,9 @@ const AppLayout = () => {
   const [showAboutUs, setShowAboutUs] = useState(false);
   const [showContactUs, setShowContactUs] = useState(false);
   const showAuthPopup = location.pathname === "/signinup";
-
+  const showAboutPopup = location.pathname === "/restaurant/about/:resId";
+  
+  
   return (
     <div className="app">
       <Header
@@ -33,6 +36,7 @@ const AppLayout = () => {
       <Outlet />
 
       {showAuthPopup && <Signinup onClose={() => navigate("/")} />}
+      {showAboutPopup && <RestaurantAbout onClose={() => navigate("/")} />}
       {showAboutUs && <AboutUs onClose={() => setShowAboutUs(false)} />}
       {showContactUs && <ContactUs onClose={() => setShowContactUs(false)} />}
 
@@ -67,9 +71,16 @@ const appRouter = createBrowserRouter([
         path: "aboutus",
         element: <AboutUs />,
       },
+      {
+        path: "/restaurants/about/:resId",
+        element: <RestaurantAbout />,
+      }
+
+      
     ],
   },
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
