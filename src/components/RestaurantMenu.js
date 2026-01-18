@@ -1,86 +1,65 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import MenuShimmer from "./MenuShimmer";
+// import Shimmer from "./Shimmer";
+import MenuItemCard from "./MenuItemCard";
+import menuData from "../data/RestaurantMenuData.json";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
-  const [menuData, setMenuData] = useState(null);
+
+  const [menuInfo, setMenuInfo] = useState(null);
+  const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchMenu();
+    loadMenu();
   }, []);
 
-  const fetchMenu = async () => {
-  try {
-    const response = await fetch(MENU_API + resId);
+  const loadMenu = () => {
+    try {
+      const menu = menuData[resId];
 
-    const json = await response.json();
-    setMenuData(json?.data);
-    setLoading(false);
-  } catch (error) {
-    console.log("Menu API blocked by Swiggy");
-    setLoading(false);
-  }
-};
+      if (!menu) {
+        setMenuInfo(null);
+        return;
+      }
 
+      setMenuInfo(menu.info);
+      setCategories(menu.categories || []);
+    } catch (error) {
+      console.error("Error loading menu", error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-  // if (loading) return <MenuShimmer />;
-
-  /* ✅ Restaurant Info */
-  const restaurantInfo =
-    menuData?.cards
-      ?.map((c) => c?.card?.card?.info)
-      ?.find(Boolean);
-
-  /* ✅ REGULAR cards */
-  const regularCards =
-    menuData?.cards
-      ?.find((c) => c?.groupedCard)
-      ?.groupedCard?.cardGroupMap?.REGULAR?.cards || [];
-
-  /* ✅ Item Categories ONLY */
-  const itemCategories = regularCards.filter(
-    (c) =>
-      c?.card?.card?.["@type"] ===
-      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
-  );
+  // if (loading) return <Shimmer />;
+  if (!menuInfo) return <h3>Menu not available</h3>;
 
   return (
     <div className="menu-page">
-      {/* 🔹 Restaurant Info */}
-      <h2>{restaurantInfo?.name}</h2>
-      <p>{restaurantInfo?.cuisines?.join(", ")}</p>
-      <p>⭐ {restaurantInfo?.avgRating}</p>
-      <p>{restaurantInfo?.areaName}</p>
+      {/* Restaurant Info */}
+      <div className="menu-header">
+        <h2>{menuInfo.name}</h2>
+        <p>{menuInfo.cuisines.join(", ")}</p>
+        <p>⭐ {menuInfo.avgRating}</p>
+        <p>{menuInfo.areaName}</p>
+      </div>
 
-      <h3>Menu</h3>
+      {/* Menu */}
+      <div className="menu-container">
+        {categories.map((category) => (
+          <div key={category.title} className="menu-category">
+            <h3>{category.title}</h3>
 
-      {/* 🔹 Categories & Items */}
-      {itemCategories.map((category) => (
-        <div key={category.card.card.title}>
-          <h4>{category.card.card.title}</h4>
-
-          {category.card.card.itemCards.map((item) => (
-            <div
-              key={item.card.info.id}
-              className="menu-item"
-            >
-              <p>{item.card.info.name}</p>
-              <p>
-                ₹
-                {(item.card.info.price ||
-                  item.card.info.defaultPrice) / 100}
-              </p>
-              
-            </div>
-          ))}
-        </div>
-      ))}
+            {category.items.map((item) => (
+              <MenuItemCard key={item.id} item={item} />
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
-
-// console.log(itemCategories);
 
 export default RestaurantMenu;

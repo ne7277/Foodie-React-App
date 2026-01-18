@@ -1,0 +1,512 @@
+{
+  "9862": {
+  "info": { "id": "9862", "name": "Pizza Hut", "cuisines": ["Pizzas"], "avgRating": 4.1, "areaName": "Bandra Kurla Complex" },
+  "categories": [
+    {
+      "title": "Classic Pizzas",
+      "items": [
+        { "id": "ph1", "name": "Margherita", "price": 249 },
+        { "id": "ph7", "name": "Classic Corn", "price": 299 },
+        { "id": "ph6", "name": "Cheese Burst", "price": 399 }
+      ]
+    },
+    {
+      "title": "Specialty Pizzas",
+      "items": [
+        { "id": "ph2", "name": "Farmhouse", "price": 349 },
+        { "id": "ph3", "name": "Veggie Supreme", "price": 369 },
+        { "id": "ph5", "name": "Mexican Green Wave", "price": 359 }
+      ]
+    },
+    {
+      "title": "Paneer Specials",
+      "items": [
+        { "id": "ph4", "name": "Paneer Tikka", "price": 389 },
+        { "id": "ph9", "name": "Tandoori Paneer", "price": 429 }
+      ]
+    },
+    {
+      "title": "Chef’s Choice",
+      "items": [
+        { "id": "ph8", "name": "Spicy Triple Tango", "price": 419 },
+        { "id": "ph10", "name": "Ultimate Veg", "price": 449 }
+      ]
+    }
+  ]
+  },
+
+  "828898": {
+  "info": { "id": "828898", "name": "Olio - The Wood Fired Pizzeria", "cuisines": ["Pizzas","Italian"], "avgRating": 4.3, "areaName": "Kalina" },
+  "categories": [
+    {
+      "title": "Classic Wood Fired Pizzas",
+      "items": [
+        { "id": "ol1", "name": "Classic Margherita", "price": 299 },
+        { "id": "ol6", "name": "Olive & Jalapeno", "price": 349 },
+        { "id": "ol5", "name": "Pesto Veggie", "price": 379 }
+      ]
+    },
+    {
+      "title": "Premium Pizzas",
+      "items": [
+        { "id": "ol2", "name": "Truffle Mushroom", "price": 399 },
+        { "id": "ol3", "name": "Four Cheese", "price": 429 },
+        { "id": "ol4", "name": "Smoked Paneer", "price": 449 },
+        { "id": "ol7", "name": "Italian Veg Supreme", "price": 459 }
+      ]
+    },
+    {
+      "title": "Italian Sides",
+      "items": [
+        { "id": "ol8", "name": "Garlic Breadsticks", "price": 199 },
+        { "id": "ol9", "name": "Cheesy Calzone", "price": 299 },
+        { "id": "ol10", "name": "Classic Focaccia", "price": 179 }
+      ]
+    }
+  ]
+},
+
+  "387322": {
+  "info": { "id": "387322", "name": "La Pino'z Pizza", "cuisines": ["Pizzas"], "avgRating": 4.3, "areaName": "Ghatkopar East" },
+  "categories": [
+    {
+      "title": "Classic Pizzas",
+      "items": [
+        { "id": "lp6", "name": "Classic Corn", "price": 259 },
+        { "id": "lp1", "name": "Cheese Burst", "price": 279 },
+        { "id": "lp3", "name": "Veg Loaded", "price": 299 }
+      ]
+    },
+    {
+      "title": "Spicy & Fusion Pizzas",
+      "items": [
+        { "id": "lp4", "name": "Spicy Treat", "price": 319 },
+        { "id": "lp8", "name": "Mexican Wave", "price": 339 },
+        { "id": "lp5", "name": "Country Special", "price": 349 }
+      ]
+    },
+    {
+      "title": "Paneer Specialties",
+      "items": [
+        { "id": "lp2", "name": "Paneer Tikka", "price": 329 },
+        { "id": "lp7", "name": "BBQ Paneer", "price": 369 }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        { "id": "lp10", "name": "Garlic Bread", "price": 149 },
+        { "id": "lp9", "name": "Cheesy 7", "price": 389 }
+      ]
+    }
+  ]
+},
+
+  "32399": {
+  "info": { "id": "32399", "name": "McDonald's", "cuisines": ["Burgers","Desserts"], "avgRating": 4.5, "areaName": "Santacruz East" },
+  "categories": [
+    {
+      "title": "Burgers",
+      "items": [
+        { "id": "mc1", "name": "McAloo Tikki", "price": 59 },
+        { "id": "mc2", "name": "McVeggie", "price": 129 },
+        { "id": "mc3", "name": "Veg Maharaja Mac", "price": 199 }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        { "id": "mc4", "name": "Medium Fries", "price": 99 },
+        { "id": "mc5", "name": "Large Fries", "price": 129 },
+        { "id": "mc8", "name": "Veg Nuggets", "price": 149 }
+      ]
+    },
+    {
+      "title": "Desserts & Beverages",
+      "items": [
+        { "id": "mc6", "name": "McFlurry Oreo", "price": 129 },
+        { "id": "mc7", "name": "Soft Serve", "price": 39 },
+        { "id": "mc9", "name": "Cold Coffee", "price": 119 },
+        { "id": "mc10", "name": "Chocolate Shake", "price": 149 }
+      ]
+    }
+  ]
+},
+
+  "809883": {
+  "info": { "id": "809883", "name": "Cheesecake & Co.", "cuisines": ["Desserts","Bakery"], "avgRating": 4.6, "areaName": "Chembur" },
+  "categories": [
+    {
+      "title": "Classic Cheesecakes",
+      "items": [
+        { "id": "cc1", "name": "Classic New York Cheesecake", "price": 299 },
+        { "id": "cc2", "name": "Blueberry Cheesecake", "price": 329 },
+        { "id": "cc5", "name": "Mango Cheesecake", "price": 319 }
+      ]
+    },
+    {
+      "title": "Premium Cheesecakes",
+      "items": [
+        { "id": "cc3", "name": "Lotus Biscoff Cheesecake", "price": 349 },
+        { "id": "cc4", "name": "Nutella Cheesecake", "price": 369 },
+        { "id": "cc6", "name": "Red Velvet Cheesecake", "price": 349 }
+      ]
+    },
+    {
+      "title": "Desserts",
+      "items": [
+        { "id": "cc7", "name": "Chocolate Truffle Cake", "price": 299 },
+        { "id": "cc8", "name": "Brownie Sundae", "price": 279 },
+        { "id": "cc9", "name": "Mini Cheesecake Jar", "price": 199 },
+        { "id": "cc10", "name": "Hazelnut Mousse", "price": 259 }
+      ]
+    }
+  ]
+},
+
+  "681665": {
+    "info": { "id": "681665", "name": "LeanCrust Pizza", "cuisines": ["Pizzas"], "avgRating": 4.3, "areaName": "Kurla West" },
+    "categories": [
+      { "title": "Thin Crust Pizzas", "items": [
+        { "id": "lc1", "name": "Garden Veg", "price": 289 },
+        { "id": "lc2", "name": "BBQ Paneer", "price": 339 },
+        { "id": "lc3", "name": "Cheese Burst Veg", "price": 359 },
+        { "id": "lc4", "name": "Spicy Corn Pizza", "price": 299 },
+        { "id": "lc5", "name": "Mexican Veg", "price": 329 },
+        { "id": "lc6", "name": "Italian Delight", "price": 349 },
+        { "id": "lc7", "name": "Paneer Supreme", "price": 369 },
+        { "id": "lc8", "name": "Classic Margherita", "price": 259 },
+        { "id": "lc9", "name": "Garlic Breadsticks", "price": 159 },
+        { "id": "lc10", "name": "Cheesy Dip", "price": 49 }
+      ]}
+    ]
+  },
+
+  "692689": {
+    "info": { "id": "692689", "name": "WeFit", "cuisines": ["Healthy Food"], "avgRating": 4.7, "areaName": "Malad West" },
+    "categories": [
+      { "title": "Healthy Bowls", "items": [
+        { "id": "wf1", "name": "Paneer Protein Bowl", "price": 299 },
+        { "id": "wf2", "name": "Veg Salad Bowl", "price": 259 },
+        { "id": "wf3", "name": "Tofu Power Bowl", "price": 279 },
+        { "id": "wf4", "name": "Quinoa Veg Bowl", "price": 289 },
+        { "id": "wf5", "name": "Chickpea Salad", "price": 249 },
+        { "id": "wf6", "name": "High Protein Wrap", "price": 269 },
+        { "id": "wf7", "name": "Paneer Sandwich", "price": 239 },
+        { "id": "wf8", "name": "Veggie Omelette", "price": 199 },
+        { "id": "wf9", "name": "Fruit Bowl", "price": 179 },
+        { "id": "wf10", "name": "Protein Smoothie", "price": 199 }
+      ]}
+    ]
+  },
+
+  "699105": {
+    "info": { "id": "699105", "name": "Harvest Salad Co", "cuisines": ["Healthy Food"], "avgRating": 4.6, "areaName": "Bandra East" },
+    "categories": [
+      { "title": "Salads & Bowls", "items": [
+        { "id": "hs1", "name": "Caesar Salad", "price": 349 },
+        { "id": "hs2", "name": "Quinoa Bowl", "price": 399 },
+        { "id": "hs3", "name": "Greek Salad", "price": 329 },
+        { "id": "hs4", "name": "Falafel Bowl", "price": 359 },
+        { "id": "hs5", "name": "Avocado Salad", "price": 379 },
+        { "id": "hs6", "name": "Chickpea Power Bowl", "price": 299 },
+        { "id": "hs7", "name": "Veg Burrito Bowl", "price": 389 },
+        { "id": "hs8", "name": "Roasted Veg Salad", "price": 319 },
+        { "id": "hs9", "name": "Fruit & Nut Salad", "price": 279 },
+        { "id": "hs10", "name": "Protein Add-on", "price": 99 }
+      ]}
+    ]
+  },
+
+  "698272": {
+    "info": { "id": "698272", "name": "Maiz Mexican Kitchen", "cuisines": ["Mexican"], "avgRating": 4.7, "areaName": "BKC" },
+    "categories": [
+      { "title": "Mexican Specialities", "items": [
+        { "id": "mx1", "name": "Veg Burrito Bowl", "price": 399 },
+        { "id": "mx2", "name": "Mexican Rice Bowl", "price": 359 },
+        { "id": "mx3", "name": "Veg Tacos", "price": 299 },
+        { "id": "mx4", "name": "Loaded Nachos", "price": 279 },
+        { "id": "mx5", "name": "Cheese Quesadilla", "price": 319 },
+        { "id": "mx6", "name": "Veg Burrito Wrap", "price": 349 },
+        { "id": "mx7", "name": "Chipotle Veg Bowl", "price": 379 },
+        { "id": "mx8", "name": "Guacamole & Chips", "price": 199 },
+        { "id": "mx9", "name": "Mexican Corn", "price": 179 },
+        { "id": "mx10", "name": "Churros", "price": 159 }
+      ]}
+    ]
+  },
+
+  "24463": {
+    "info": { "id": "24463", "name": "Domino's Pizza", "cuisines": ["Pizzas"], "avgRating": 3.9, "areaName": "BKC" },
+    "categories": [
+      { "title": "Pizzas & Sides", "items": [
+        { "id": "dp1", "name": "Peppy Paneer", "price": 329 },
+        { "id": "dp2", "name": "Veg Extravaganza", "price": 399 },
+        { "id": "dp3", "name": "Farmhouse", "price": 349 },
+        { "id": "dp4", "name": "Margherita", "price": 259 },
+        { "id": "dp5", "name": "Mexican Green Wave", "price": 369 },
+        { "id": "dp6", "name": "Cheesy Dip", "price": 49 },
+        { "id": "dp7", "name": "Garlic Bread", "price": 149 },
+        { "id": "dp8", "name": "Stuffed Garlic Bread", "price": 179 },
+        { "id": "dp9", "name": "Paneer Zingy Parcel", "price": 129 },
+        { "id": "dp10", "name": "Choco Lava Cake", "price": 99 }
+      ]}
+    ]
+  },
+
+  "243517": {
+    "info": { "id": "243517", "name": "KFC", "cuisines": ["Fast Food"], "avgRating": 4.2, "areaName": "Kurla West" },
+    "categories": [
+      { "title": "Fast Food", "items": [
+        { "id": "kfc1", "name": "Veg Zinger Burger", "price": 199 },
+        { "id": "kfc2", "name": "Veg Krisper", "price": 149 },
+        { "id": "kfc3", "name": "Veg Popcorn", "price": 169 },
+        { "id": "kfc4", "name": "French Fries", "price": 109 },
+        { "id": "kfc5", "name": "Cheese Fries", "price": 139 },
+        { "id": "kfc6", "name": "Veg Rice Bowl", "price": 199 },
+        { "id": "kfc7", "name": "Veg Twister", "price": 179 },
+        { "id": "kfc8", "name": "Brownie", "price": 129 },
+        { "id": "kfc9", "name": "Pepsi", "price": 59 },
+        { "id": "kfc10", "name": "Cold Coffee", "price": 99 }
+      ]}
+    ]
+  },
+
+  "78036": {
+    "info": { "id": "78036", "name": "Burger King", "cuisines": ["Burgers"], "avgRating": 4.3, "areaName": "Santacruz East" },
+    "categories": [
+      { "title": "Burgers & Combos", "items": [
+        { "id": "bk1", "name": "Veg Whopper", "price": 179 },
+        { "id": "bk2", "name": "Paneer King", "price": 199 },
+        { "id": "bk3", "name": "Veg Makhani Burst", "price": 169 },
+        { "id": "bk4", "name": "Classic Veg Burger", "price": 129 },
+        { "id": "bk5", "name": "Cheesy Fries", "price": 139 },
+        { "id": "bk6", "name": "French Fries", "price": 99 },
+        { "id": "bk7", "name": "Chocolate Shake", "price": 149 },
+        { "id": "bk8", "name": "Cold Coffee", "price": 129 },
+        { "id": "bk9", "name": "Veg Nuggets", "price": 149 },
+        { "id": "bk10", "name": "Soft Serve", "price": 49 }
+      ]}
+    ]
+  },
+  "31775": {
+  "info": { "id": "31775", "name": "Subway", "cuisines": ["Sandwiches"], "avgRating": 4.3, "areaName": "Bandra East" },
+  "categories": [
+    {
+      "title": "Veg Subs",
+      "items": [
+        { "id": "sw1", "name": "Veggie Delight", "price": 199 },
+        { "id": "sw2", "name": "Paneer Tikka Sub", "price": 229 },
+        { "id": "sw3", "name": "Aloo Patty Sub", "price": 189 },
+        { "id": "sw4", "name": "Veg Shammi Sub", "price": 209 }
+      ]
+    },
+    {
+      "title": "Toasted Specials",
+      "items": [
+        { "id": "sw5", "name": "Cheese Burst Sub", "price": 239 },
+        { "id": "sw6", "name": "Paneer Melt Sub", "price": 249 }
+      ]
+    },
+    {
+      "title": "Sides & Add-ons",
+      "items": [
+        { "id": "sw7", "name": "Hash Browns", "price": 99 },
+        { "id": "sw8", "name": "Choco Cookie", "price": 69 }
+      ]
+    }
+  ]
+},
+"376244": {
+  "info": { "id": "376244", "name": "Good Flippin' Burgers", "cuisines": ["Burgers"], "avgRating": 4.6, "areaName": "Santacruz East" },
+  "categories": [
+    {
+      "title": "Signature Burgers",
+      "items": [
+        { "id": "gf1", "name": "Classic Veg Burger", "price": 249 },
+        { "id": "gf2", "name": "Cheese Smash Burger", "price": 299 },
+        { "id": "gf3", "name": "Spicy Veg Burger", "price": 279 }
+      ]
+    },
+    {
+      "title": "Loaded Burgers",
+      "items": [
+        { "id": "gf4", "name": "Mushroom Cheese Burger", "price": 319 },
+        { "id": "gf5", "name": "Paneer Crunch Burger", "price": 329 }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        { "id": "gf6", "name": "French Fries", "price": 129 },
+        { "id": "gf7", "name": "Cheesy Fries", "price": 159 }
+      ]
+    }
+  ]
+},
+"376244": {
+  "info": { "id": "376244", "name": "Good Flippin' Burgers", "cuisines": ["Burgers"], "avgRating": 4.6, "areaName": "Santacruz East" },
+  "categories": [
+    {
+      "title": "Signature Burgers",
+      "items": [
+        { "id": "gf1", "name": "Classic Veg Burger", "price": 249 },
+        { "id": "gf2", "name": "Cheese Smash Burger", "price": 299 },
+        { "id": "gf3", "name": "Spicy Veg Burger", "price": 279 }
+      ]
+    },
+    {
+      "title": "Loaded Burgers",
+      "items": [
+        { "id": "gf4", "name": "Mushroom Cheese Burger", "price": 319 },
+        { "id": "gf5", "name": "Paneer Crunch Burger", "price": 329 }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        { "id": "gf6", "name": "French Fries", "price": 129 },
+        { "id": "gf7", "name": "Cheesy Fries", "price": 159 }
+      ]
+    }
+  ]
+},
+"328878": {
+  "info": { "id": "328878", "name": "Charcoal Eats", "cuisines": ["Biryani"], "avgRating": 4.3, "areaName": "Kalina" },
+  "categories": [
+    {
+      "title": "Veg Biryanis",
+      "items": [
+        { "id": "ce1", "name": "Veg Dum Biryani", "price": 299 },
+        { "id": "ce2", "name": "Paneer Biryani", "price": 329 },
+        { "id": "ce3", "name": "Hyderabadi Veg Biryani", "price": 319 }
+      ]
+    },
+    {
+      "title": "Rice Bowls",
+      "items": [
+        { "id": "ce4", "name": "Veg Pulao", "price": 249 },
+        { "id": "ce5", "name": "Paneer Pulao", "price": 279 }
+      ]
+    },
+    {
+      "title": "Sides",
+      "items": [
+        { "id": "ce6", "name": "Raita", "price": 49 },
+        { "id": "ce7", "name": "Salad", "price": 39 }
+      ]
+    }
+  ]
+},
+"391816": {
+  "info": { "id": "391816", "name": "Louis Burger", "cuisines": ["Burgers"], "avgRating": 4.3, "areaName": "Bandra East" },
+  "categories": [
+    {
+      "title": "Gourmet Burgers",
+      "items": [
+        { "id": "lb1", "name": "Veg Truffle Burger", "price": 349 },
+        { "id": "lb2", "name": "Classic Veg Burger", "price": 299 },
+        { "id": "lb3", "name": "Cheese Loaded Burger", "price": 329 }
+      ]
+    },
+    {
+      "title": "Sides & Fries",
+      "items": [
+        { "id": "lb4", "name": "Crispy Fries", "price": 129 },
+        { "id": "lb5", "name": "Cheesy Fries", "price": 159 }
+      ]
+    }
+  ]
+},
+"82668": {
+  "info": { "id": "82668", "name": "The Belgian Waffle Co.", "cuisines": ["Desserts"], "avgRating": 4.6, "areaName": "Santacruz East" },
+  "categories": [
+    {
+      "title": "Classic Waffles",
+      "items": [
+        { "id": "bw1", "name": "Chocolate Waffle", "price": 179 },
+        { "id": "bw2", "name": "Strawberry Waffle", "price": 189 },
+        { "id": "bw3", "name": "Honey Butter Waffle", "price": 169 }
+      ]
+    },
+    {
+      "title": "Premium Waffles",
+      "items": [
+        { "id": "bw4", "name": "Nutella Waffle", "price": 219 },
+        { "id": "bw5", "name": "Red Velvet Waffle", "price": 229 }
+      ]
+    }
+  ]
+},
+"750450": {
+  "info": { "id": "750450", "name": "Daily Kitchen", "cuisines": ["Home Food"], "avgRating": 4.7, "areaName": "Kurla West" },
+  "categories": [
+    {
+      "title": "Thalis",
+      "items": [
+        { "id": "dk1", "name": "Veg Thali", "price": 249 },
+        { "id": "dk2", "name": "Paneer Thali", "price": 299 }
+      ]
+    },
+    {
+      "title": "Rice & Curries",
+      "items": [
+        { "id": "dk3", "name": "Dal Tadka & Rice", "price": 219 },
+        { "id": "dk4", "name": "Paneer Butter Masala & Rice", "price": 269 }
+      ]
+    },
+    {
+      "title": "Extras",
+      "items": [
+        { "id": "dk5", "name": "Roti (2 pcs)", "price": 39 },
+        { "id": "dk6", "name": "Jeera Rice", "price": 129 }
+      ]
+    }
+  ]
+},
+"639509": {
+  "info": { "id": "639509", "name": "Dum Safar Biryani", "cuisines": ["Biryani"], "avgRating": 3.8, "areaName": "BKC" },
+  "categories": [
+    {
+      "title": "Veg Biryanis",
+      "items": [
+        { "id": "ds1", "name": "Veg Dum Biryani", "price": 279 },
+        { "id": "ds2", "name": "Paneer Dum Biryani", "price": 319 }
+      ]
+    },
+    {
+      "title": "Rice & Sides",
+      "items": [
+        { "id": "ds3", "name": "Veg Pulao", "price": 249 },
+        { "id": "ds4", "name": "Raita", "price": 49 }
+      ]
+    }
+  ]
+},
+"5172": {
+  "info": { "id": "5172", "name": "Theobroma", "cuisines": ["Bakery","Desserts"], "avgRating": 4.6, "areaName": "BKC" },
+  "categories": [
+    {
+      "title": "Brownies",
+      "items": [
+        { "id": "tb1", "name": "Chocolate Brownie", "price": 149 },
+        { "id": "tb3", "name": "Walnut Brownie", "price": 169 }
+      ]
+    },
+    {
+      "title": "Cakes",
+      "items": [
+        { "id": "tb2", "name": "Chocolate Cake", "price": 399 },
+        { "id": "tb4", "name": "Red Velvet Cake", "price": 429 }
+      ]
+    },
+    {
+      "title": "Bakery Specials",
+      "items": [
+        { "id": "tb5", "name": "Butter Croissant", "price": 129 },
+        { "id": "tb6", "name": "Chocolate Muffin", "price": 119 }
+      ]
+    }
+  ]
+}
+}
