@@ -186,11 +186,40 @@
   margin-top: 20px;
 }
 
+
 .body{
     border: solid rgb(109, 72, 8);
     padding : 0;  
     margin: 0;
+    /* min-height: 100vh; */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+.ttt-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 6px;
+}
+
+.ttt-cell {
+  width: 80px;
+  height: 80px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
 
 .footer {
   background-color: #1f1f1f; 

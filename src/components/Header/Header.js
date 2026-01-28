@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import useOnlineStatus from "../../utils/useOnlineStatus";
+import { useState } from "react";
 
 const Header = ({ }) => {
   const navigate = useNavigate();
+  const onlineStatus = useOnlineStatus();
   return (
     <header className="header">
       <div className="header-container">
@@ -11,7 +14,7 @@ const Header = ({ }) => {
         </div>
         <nav className="navbar">
           <ul>  
-            <li onClick={() => navigate("/")}>Home</li>
+            <li onClick={() => navigate("/")}>Home{onlineStatus ? "✅" : "🔴"}</li>
             <li onClick={() => navigate("/signinup")}>My Account</li>
             <li onClick={() => navigate("/contactus")}>
               Contact Us</li>
