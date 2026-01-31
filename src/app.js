@@ -27,7 +27,7 @@ const AppLayout = () => {
   
   
   return (
-    <div className="app">
+    <div className="bg-[rgb(241,230,209)] w-full p-0 m-0 ">
       <Header
         onSignInClick={() => navigate("/signinup")}
         onContactUsClick={() => setShowContactUs(true)}
