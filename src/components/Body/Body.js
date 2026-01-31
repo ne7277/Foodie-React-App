@@ -113,25 +113,37 @@ const Body = () => {
 
   return (
     <div className="body">
-      <div className="search">
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search restaurants..."
-            value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
-          />
-          <button onClick={handleSearch}>Search</button>
-        </div>
+      <div className="my-4 mb-4 flex flex-wrap items-center justify-center gap-4">
+  
+  {/* SEARCH BAR */}
+  <div className="flex items-center gap-2">
+    <input
+      type="text"
+      placeholder="Search restaurants..."
+      value={searchText}
+      onChange={(e) => setSearchText(e.target.value)}
+      className="h-10 w-64 rounded-lg border border-gray-500 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+    />
 
-        <div className="toprated">
-          <button onClick={handleTopRatedButton}>
-            {isTopRated ? "All Restaurants" : "Top Rated Restaurants"}
-          </button>
-        </div>
-      </div>
+    <button
+      onClick={handleSearch}
+      className="flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-5 font-serif text-white shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:from-orange-400 hover:to-orange-500 hover:shadow-orange-500/50 active:scale-95"
+    >
+      Search
+    </button>
+  </div>
 
-      <div className="res-container">
+  {/* TOP RATED BUTTON */}
+  <button
+    onClick={handleTopRatedButton}
+    className="flex h-10 w-52 items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-5 font-serif text-white shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:from-orange-400 hover:to-orange-500 hover:shadow-orange-500/50 active:scale-95"
+  >
+    {isTopRated ? "All Restaurants" : "Top Rated Restaurants"}
+  </button>
+</div>
+
+    {/* BODY */}
+      <div className="body flex flex-wrap justify-center gap-6">
         {filteredData.length === 0 ? (
           <h3>No restaurants found</h3>
         ) : (
