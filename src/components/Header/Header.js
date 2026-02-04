@@ -6,7 +6,7 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
 
   return (
-    <header className="sticky top-0 z-50 bg-[#1f1f1f]/95 backdrop-blur-md shadow-lg font-serif">
+    <header className="HEADER sticky top-0 z-50 bg-[#1f1f1f]/95 backdrop-blur-md shadow-lg font-serif">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-6 py-4">
         
         {/* LOGO */}
@@ -24,7 +24,7 @@ const Header = () => {
           </h1>
         </div>
 
-        {/* NAV */}
+        {/* NAVBAR */}
         <nav className="mt-4 w-full sm:mt-0 sm:w-auto">
           <ul className="flex flex-wrap items-center gap-6 text-white">
             

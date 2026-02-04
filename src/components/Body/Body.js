@@ -127,7 +127,7 @@ const Body = () => {
 
     <button
       onClick={handleSearch}
-      className="flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-5 font-serif text-white shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:from-orange-400 hover:to-orange-500 hover:shadow-orange-500/50 active:scale-95"
+      className="flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-5 font-serif text-white shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:from-orange-400 hover:to-orange-500 hover:shadow-orange-500/50 active:scale-95 cursor-pointer"
     >
       Search
     </button>
@@ -136,7 +136,7 @@ const Body = () => {
   {/* TOP RATED BUTTON */}
   <button
     onClick={handleTopRatedButton}
-    className="flex h-10 w-52 items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-5 font-serif text-white shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:from-orange-400 hover:to-orange-500 hover:shadow-orange-500/50 active:scale-95"
+    className="flex h-10 w-52 items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 px-5 font-serif text-white shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:from-orange-400 hover:to-orange-500 hover:shadow-orange-500/50 active:scale-95 cursor-pointer"
   >
     {isTopRated ? "All Restaurants" : "Top Rated Restaurants"}
   </button>
