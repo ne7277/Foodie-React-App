@@ -11,7 +11,7 @@ const RestaurantMenu = () => {
   const [restaurant, setRestaurant] = useState(null);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [showAbout, setShowAbout] = useState(false);
+  const [showResAbout, setShowResAbout] = useState(false);
   const [openIndex, setOpenIndex] = useState(null);
 
   const accordionRefs = useRef([]);
@@ -59,7 +59,7 @@ const RestaurantMenu = () => {
         text-gray-800 cursor-pointer
         hover:text-orange-500 transition
       "
-      onClick={() => setShowAbout(true)}
+      onClick={() => setShowResAbout(true)}
     >
       {restaurant.name}
     </h2>
@@ -85,10 +85,10 @@ const RestaurantMenu = () => {
   </div>
 
   {/* About Modal */}
-  {showAbout && (
+  {showResAbout && (
     <RestaurantsAbout
       resId={resId}
-      onClose={() => setShowAbout(false)}
+      onClose={() => setShowResAbout(false)}
     />
   )}
 

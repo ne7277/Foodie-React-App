@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import AboutUs from "./Aboutus/aboutus";
 
 const Footer = ({ onAboutUsClick }) => {
   const navigate = useNavigate();
+  const [showAbout, setShowAbout] = useState(false);
 
   return (
     <footer className="footer bg-black text-white p-8">
       <div className="footer-container flex flex-wrap justify-between">
-
+{showAbout && (
+    <AboutUs
+      onClose={() => setShowAbout(false)}
+    />
+  )}
         <div className="flex-1 basis-50 m-3.75">
           <h3 className="text-orange-400 my-4 font-bold text-2xl">Company</h3>
           <ul className="[&>li]:my-2.5 [&>li]:cursor-pointer [&>li]:transition-all [&>li]:duration-300 [&>li:hover]:text-orange-300 [&>li:hover]:translate-x-2">
-            <li onClick={() => navigate("/aboutus")}>About Us</li>
+            <li onClick={() => setShowAbout(true)}>About Us</li>
             <li >Careers</li>
             <li>Blog</li>
             <li>Partners</li>
