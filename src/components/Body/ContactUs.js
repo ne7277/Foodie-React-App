@@ -14,11 +14,7 @@ const ContactUs = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -32,55 +28,93 @@ const ContactUs = () => {
     console.log("Form Data:", formData);
     setSubmitted(true);
 
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
-    <div className="contact-container">
-      <button className="close-btn-aboutus" onClick={() => navigate("/")}> X </button>
+    <div className="
+        min-h-[90vh]
+  bg-linear-to-br from-[#667eea] to-[#764ba2]
+  flex items-center  justify-center
+  px-4 text-white font-sans relative
+    ">
+      {/* Close Button */}
+      <button
+        onClick={() => navigate("/")}
+        className="
+          close-button
+        "
+      >
+        ✕
+      </button>
 
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you 💬</p>
-
-      {submitted && (
-        <p className="success-msg">
-          ✅ Message sent successfully!
+      {/* Card */}
+      <div className="
+        w-full max-w-md
+        bg-white/15 backdrop-blur-md
+        rounded-2xl shadow-2xl
+        p-8
+      ">
+        {/* Header */}
+        <h1 className="text-3xl font-bold text-center mb-1">
+          Contact Us
+        </h1>
+        <p className="text-center text-white/80 mb-6">
+          We’d love to hear from you 💬
         </p>
-      )}
 
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
+        {/* Success Message */}
+        {submitted && (
+          <p className="mb-4 bg-green-500/90 text-white px-4 py-2 rounded-lg text-sm text-center">
+            ✅ Message sent successfully!
+          </p>
+        )}
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            className="input-style"
+          />
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          rows="5"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="input-style"
+          />
 
-        <button type="submit">
-          Send Message
-        </button>
-      </form>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            value={formData.message}
+            onChange={handleChange}
+            className="input-style"
+          />
+
+          <button
+            type="submit"
+            className="
+              mt-2
+              bg-gradient-to-r from-[#667eea] to-[#764ba2]
+              hover:from-[#764ba2] hover:to-[#667eea]
+              py-3 rounded-lg
+              font-semibold
+              transition-all duration-300
+              hover:scale-[1.02]
+            "
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

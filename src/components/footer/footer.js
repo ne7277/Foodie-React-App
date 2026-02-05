@@ -5,7 +5,7 @@ const Footer = ({ onAboutUsClick }) => {
   const navigate = useNavigate();
 
   return (
-    <footer className="footer bg-black text-white p-8 mt-8">
+    <footer className="footer bg-black text-white p-8">
       <div className="footer-container flex flex-wrap justify-between">
 
         <div className="flex-1 basis-50 m-3.75">
