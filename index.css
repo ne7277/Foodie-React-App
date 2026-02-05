@@ -23,3 +23,22 @@
     @apply h-full m-0;
   }
 }
+
+@layer utilities {
+  @keyframes popup {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animate-popup {
+    animation: popup 0.3s ease;
+  }
+}
+
+
