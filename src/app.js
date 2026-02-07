@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
   Outlet,
   useNavigate,
-  useLocation,
+  useMatch,
 } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import Footer from "./components/footer/footer";
@@ -16,32 +17,32 @@ import ContactUs from "./components/Body/ContactUs";
 import Error404 from "./components/Body/Error";
 import RestaurantMenu from "./components/RestaurantMenu/RestaurantMenu";
 import RestaurantAbout from "./components/RestaurantMenu/RestaurantAbout";
+import { Provider } from "react-redux";
+import appStore from "./utils/Store/appStore";
+import Cart from "./components/Header/Cart";
 
 const AppLayout = () => {
   const navigate = useNavigate();
-  const location = useLocation();
-  const [showAboutUs, setShowAboutUs] = useState(false);
-  const [showContactUs, setShowContactUs] = useState(false);
-  const showAuthPopup = location.pathname === "/signinup";
-  const showAboutPopup = location.pathname === "/restaurant/about/:resId";
-  
-  
+
+  const isAuthRoute = useMatch("/signinup");
+  const isRestaurantAbout = useMatch("/restaurants/about/:resId");
+
   return (
-    <div className="bg-[rgb(241,230,209)] w-full p-0 m-0 ">
+    <Provider store={appStore}>
+      <div>
       <Header
         onSignInClick={() => navigate("/signinup")}
-        onContactUsClick={() => setShowContactUs(true)}
+        onContactUsClick={() => navigate("/contactus")}
       />
 
       <Outlet />
 
-      {showAuthPopup && <Signinup onClose={() => navigate("/")} />}
-      {showAboutPopup && <RestaurantAbout onClose={() => navigate("/")} />}
-      {showAboutUs && <AboutUs onClose={() => setShowAboutUs(false)} />}
-      {showContactUs && <ContactUs onClose={() => setShowContactUs(false)} />}
+      {isAuthRoute && <Signinup onClose={() => navigate("/")} />}
+      {isRestaurantAbout && <RestaurantAbout onClose={() => navigate(-1)} />}
 
-      <Footer onAboutUsClick={() => setShowAboutUs(true)} />
+      <Footer onAboutUsClick={() => navigate("/aboutus")} />
     </div>
+    </Provider>
   );
 };
 
@@ -64,6 +65,10 @@ const appRouter = createBrowserRouter([
         element: <RestaurantMenu />,
       },
       {
+        path: "restaurants/about/:resId",
+        element: <Body />, 
+      },
+      {
         path: "contactus",
         element: <ContactUs />,
       },
@@ -72,15 +77,12 @@ const appRouter = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "/restaurants/about/:resId",
-        element: <RestaurantAbout />,
-      }
-
-      
+        path: "cart",
+        element: <Cart />,
+      },
     ],
   },
 ]);
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);

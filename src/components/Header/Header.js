@@ -1,10 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import useOnlineStatus from "../../utils/useOnlineStatus";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const navigate = useNavigate();
   const onlineStatus = useOnlineStatus();
-
+  const cartItems = useSelector((store) => store.cart.items);
+  
+  console.log(cartItems);
   return (
     <header className="HEADER sticky top-0 z-50 bg-[#1f1f1f]/95 backdrop-blur-md shadow-lg font-serif">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between px-6 py-4">
@@ -26,44 +29,39 @@ const Header = () => {
 
         {/* NAVBAR */}
         <nav className="mt-4 w-full sm:mt-0 sm:w-auto">
-          <ul className="flex flex-wrap items-center gap-6 text-white">
+          <ul className="flex flex-wrap items-center gap-6 text-white 
+          
+          [&>li]:group relative [&>li]:cursor-pointer [&>li]:rounded-md [&>li]:px-2 [&>li]:py-1 [&>li]:text-lg [&>li]:font-medium [&>li]:transition-all [&>li]:duration-300 [&>li]:hover:scale-105 [&>li]:hover:bg-[#ff5722]
+          
+          [&>li_span]:absolute [&>li_span]:bottom-0 [&>li_span]:left-0 [&>li_span]:h-0.5 [&>li_span]:w-0 [&>li_span]:bg-white [&>li_span]:transition-all [&>li_span]:duration-800 [&>li:hover_span]:w-full">
             
-            <li
-              onClick={() => navigate("/")}
-              className="group relative cursor-pointer rounded-md px-2 py-1 text-lg font-medium transition-all duration-300 hover:scale-105 hover:bg-[#ff5722]"
-            >
+            <li onClick={() => navigate("/")}>
               Home {onlineStatus ? "✅" : "🔴"}
-              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+              <span></span>
             </li>
 
             <li
-              onClick={() => navigate("/signinup")}
-              className="group relative cursor-pointer rounded-md px-2 py-1 text-lg font-medium transition-all duration-300 hover:scale-105 hover:bg-[#ff5722]"
-            >
+              onClick={() => navigate("/signinup")}>
               My Account
-              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+              <span></span>
             </li>
 
             <li
               onClick={() => navigate("/contactus")}
-              className="group relative cursor-pointer rounded-md px-2 py-1 text-lg font-medium transition-all duration-300 hover:scale-105 hover:bg-[#ff5722]"
             >
               Contact Us
-              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+              <span></span>
             </li>
 
-            <li className="group relative cursor-pointer rounded-md px-2 py-1 text-lg font-medium transition-all duration-300 hover:scale-105 hover:bg-[#ff5722]">
-              Cart 🛒
-              <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
+            <li onClick={() => navigate("cart")}>
+              Cart 🛒({cartItems.length})
+              <span></span>
             </li>
 
             <li
-              onClick={() => navigate("/signinup")}
-              className="rounded-full bg-[#ff5722] px-4 py-1.5 text-lg font-semibold text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-orange-600 cursor-pointer"
-            >
+              onClick={() => navigate("/signinup")}            >
               Sign In
             </li>
-
           </ul>
         </nav>
       </div>

@@ -1,5 +1,17 @@
+import { useDispatch } from "react-redux";
+import { addItem } from "../../utils/Store/cartSlice";
+
 const MenuItemCard = ({ item }) => {
   const { name, price } = item;
+  const dispatch = useDispatch();
+
+  const handleCartItem = (item) => {
+    dispatch(addItem (item))
+
+  };
+
+  
+  
 
   return (
     <div
@@ -41,6 +53,7 @@ const MenuItemCard = ({ item }) => {
       transition-all duration-300
       hover:scale-105 cursor-pointer
     "
+    onClick={() => handleCartItem (item)}
   >
     Add
   </button>
