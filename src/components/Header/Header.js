@@ -54,7 +54,7 @@ const Header = () => {
             </li>
 
             <li onClick={() => navigate("cart")}>
-              Cart 🛒({cartItems.length})
+              Cart 🛒{cartItems.length > 0 ? `(${cartItems.length})` : ""}
               <span></span>
             </li>
 
