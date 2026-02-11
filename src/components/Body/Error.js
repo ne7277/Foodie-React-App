@@ -1,51 +1,46 @@
-import { useState } from "react";
-import { useRouteError } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import TicTacToeOffline from "./TicTacToeOffline";
 
 const Error404 = () => {
-  
-  const [score, setScore] = useState(0);
-  const [position, setPosition] = useState({
-    top: "50%",
-    left: "50%",
-  });
- 
   const navigate = useNavigate();
 
-
-const err = useRouteError();
-console.log(err);
-
-  
-  const moveBox = () => {
-    const top = Math.random() * 80 + "%";
-    const left = Math.random() * 80 + "%";
-
-    setPosition({ top, left });
-    setScore(score + 1);
-  };
-
   return (
-    <div className="error-container">
-      <button className="close-btn-aboutus" onClick={() => navigate("/")}> X </button>
-      <h1>{err.status}</h1>
-      <h2>Oops! Page Not Found 😵</h2>
-      <h2>Detail of {err.data}</h2>
-      <p>Looks like you're lost. Play a game while you're here!</p>
+    <div className="min-h-screen flex flex-col items-center 
+                    bg-gradient-to-br from-red-500 via-pink-500 to-purple-600
+                    text-white px-6 py-10">
 
-      <div className="game-area">
-        <div
-          className="box"
-          style={{ top: position.top, left: position.left }}
-          onClick={moveBox}
-        ></div>
+      <button
+        onClick={() => navigate("/")}
+        className="absolute top-6 right-6 text-2xl font-bold hover:scale-110 transition"
+      >
+        ✕
+      </button>
+
+      <div className="text-center mb-10 max-w-xl">
+        <h1 className="text-7xl font-extrabold tracking-wider mb-4">
+          404
+        </h1>
+
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
+          Oops! Page Not Found 😵
+        </h2>
+
+        <button
+          onClick={() => navigate("/")}
+          className="mt-6 px-6 py-3 bg-white text-purple-600 
+                     font-semibold rounded-full
+                     transition-all duration-300 
+                     hover:scale-105 shadow-lg"
+        >
+          Go Back Home
+        </button>
       </div>
 
-      <h3>Score: {score}</h3>
+      <div className="w-24 h-1 bg-white/40 rounded-full mb-8"></div>
 
-      <a href="/" className="home-btn">
-        Go Back Home
-      </a>
+      <div className="w-full max-w-md">
+        <TicTacToeOffline />
+      </div>
     </div>
   );
 };
