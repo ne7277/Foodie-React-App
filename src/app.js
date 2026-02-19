@@ -20,6 +20,8 @@ import RestaurantAbout from "./components/RestaurantMenu/RestaurantAbout";
 import { Provider } from "react-redux";
 import appStore from "./utils/Store/appStore";
 import Cart from "./components/Header/Cart";
+import AdBanner from "./components/Body/AdBanner";
+import PlayableAd from "./components/Body/PlayableAd";
 
 const AppLayout = () => {
   const navigate = useNavigate();
@@ -30,18 +32,18 @@ const AppLayout = () => {
   return (
     <Provider store={appStore}>
       <div>
-      <Header
-        onSignInClick={() => navigate("/signinup")}
-        onContactUsClick={() => navigate("/contactus")}
-      />
+        <Header
+          onSignInClick={() => navigate("/signinup")}
+          onContactUsClick={() => navigate("/contactus")}
+        />
 
-      <Outlet />
+        <Outlet />
 
-      {isAuthRoute && <Signinup onClose={() => navigate("/")} />}
-      {isRestaurantAbout && <RestaurantAbout onClose={() => navigate(-1)} />}
+        {isAuthRoute && <Signinup onClose={() => navigate("/")} />}
+        {isRestaurantAbout && <RestaurantAbout onClose={() => navigate(-1)} />}
 
-      <Footer onAboutUsClick={() => navigate("/aboutus")} />
-    </div>
+        <Footer onAboutUsClick={() => navigate("/aboutus")} />
+      </div>
     </Provider>
   );
 };
@@ -58,7 +60,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "signinup",
-        element: <Body />, 
+        element: <Body />,
       },
       {
         path: "restaurants/:resId",
@@ -66,7 +68,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "restaurants/about/:resId",
-        element: <Body />, 
+        element: <Body />,
       },
       {
         path: "contactus",
@@ -79,6 +81,10 @@ const appRouter = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "bake-ad",
+        element: <PlayableAd />,
       },
     ],
   },

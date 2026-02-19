@@ -4,6 +4,7 @@ import { Shimmer } from "./Shimmer";
 import restaurantsData from "../../data/RestaurantsData.json";
 import useOnlineStatus from "../../utils/useOnlineStatus";
 import TicTacToeOffline from "./TicTacToeOffline";
+import AdBanner from "./AdBanner";
 
 const Body = () => {
   const [restaurantData, setRestaurantData] = useState([]);
@@ -61,8 +62,8 @@ const Body = () => {
   if (loading) return <Shimmer />;
 
   return (
-    <div className="body px-4 py-6">
-
+    <div className="body bg-yellow-100 px-4 py-6">
+       <AdBanner />
       <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
 
         <div className="flex items-center gap-2">
